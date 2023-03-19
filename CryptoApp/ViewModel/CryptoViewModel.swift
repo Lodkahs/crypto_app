@@ -11,10 +11,11 @@ struct CryptoListViewModel {
     
     let cryptoCurrencyList : [CryptoCurrency]
     
+}
+
+extension CryptoListViewModel {
     func numberOfRowsInSection() -> Int {
-        
         return self.cryptoCurrencyList.count
-        
     }
     
     func cryptoAtIndex(_ index : Int) -> CryptoViewModel {
@@ -24,8 +25,10 @@ struct CryptoListViewModel {
 }
 
 struct CryptoViewModel {
-    let cryptoCurrency : CryptoCurrency
-    
+    let cryptoCurrency : CryptoCurrency    
+}
+
+extension CryptoViewModel {
     var name : String {
         return cryptoCurrency.currency
     }
