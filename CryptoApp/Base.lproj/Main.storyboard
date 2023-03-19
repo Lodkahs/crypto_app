@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-yj-xaU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-yj-xaU">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="Ltf-h1-ReB"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="120" id="Ts6-sh-R5F" customClass="CryptoTableViewCell" customModule="CryptoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="120"/>
@@ -36,8 +39,8 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k9-VU-d68">
                                                     <rect key="frame" x="33" y="11" width="340" height="31"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="BMo-Wx-qgi"/>
-                                                        <constraint firstAttribute="width" constant="340" id="HXu-PD-Idf"/>
+                                                        <constraint firstAttribute="height" constant="31" id="T1D-0i-lJ2"/>
+                                                        <constraint firstAttribute="width" constant="340" id="emy-hD-1T8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -45,12 +48,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3k9-VU-d68" firstAttribute="leading" secondItem="ocO-qz-jVZ" secondAttribute="leading" id="HbB-Zx-y1n"/>
-                                                <constraint firstItem="3k9-VU-d68" firstAttribute="trailing" secondItem="8Sm-wu-ypg" secondAttribute="trailingMargin" id="Ifb-2W-6dY"/>
-                                                <constraint firstItem="ocO-qz-jVZ" firstAttribute="top" secondItem="3k9-VU-d68" secondAttribute="bottom" constant="20" id="Iqq-Y3-DH6"/>
-                                                <constraint firstItem="3k9-VU-d68" firstAttribute="top" secondItem="8Sm-wu-ypg" secondAttribute="topMargin" id="RWJ-km-HKa"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ocO-qz-jVZ" secondAttribute="bottom" constant="13" id="iG5-wi-tQd"/>
-                                                <constraint firstItem="3k9-VU-d68" firstAttribute="trailing" secondItem="ocO-qz-jVZ" secondAttribute="trailing" id="jx9-W2-m9L"/>
+                                                <constraint firstItem="3k9-VU-d68" firstAttribute="trailing" secondItem="ocO-qz-jVZ" secondAttribute="trailing" id="2JI-PJ-z7d"/>
+                                                <constraint firstItem="ocO-qz-jVZ" firstAttribute="top" secondItem="3k9-VU-d68" secondAttribute="bottom" constant="20" id="8OU-dN-0eJ"/>
+                                                <constraint firstItem="3k9-VU-d68" firstAttribute="top" secondItem="8Sm-wu-ypg" secondAttribute="topMargin" id="QsZ-bM-ScQ"/>
+                                                <constraint firstItem="3k9-VU-d68" firstAttribute="leading" secondItem="ocO-qz-jVZ" secondAttribute="leading" id="STd-4g-8KK"/>
+                                                <constraint firstItem="3k9-VU-d68" firstAttribute="trailing" secondItem="8Sm-wu-ypg" secondAttribute="trailingMargin" id="c3H-zv-ukn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ocO-qz-jVZ" secondAttribute="bottom" constant="13" id="mFw-hS-x0Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -64,10 +67,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OsP-yj-xaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AWF-jX-kCo"/>
-                            <constraint firstItem="OsP-yj-xaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X9M-oM-Z6N"/>
-                            <constraint firstItem="OsP-yj-xaU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gfp-PG-xzJ"/>
-                            <constraint firstItem="OsP-yj-xaU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vxZ-3f-eHd"/>
+                            <constraint firstItem="OsP-yj-xaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hi0-HE-VFk"/>
+                            <constraint firstItem="OsP-yj-xaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mEA-Ho-kYN"/>
+                            <constraint firstItem="OsP-yj-xaU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n1c-j6-MZh"/>
+                            <constraint firstItem="OsP-yj-xaU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nTb-6C-sDG"/>
                         </constraints>
                     </view>
                     <connections>
